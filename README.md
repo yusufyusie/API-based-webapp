@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 <div align="center">
-  <img src="assets/images/logo.png" alt="logo" width="140"  height="auto" />
+  <img src="assets/images/logo.jpg" alt="logo" width="140"  height="auto" />
   <br/>
   <h3><b> api-based-webapp Project</b></h3>
 </div>
