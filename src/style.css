@@ -48,6 +48,7 @@ body {
 .navbar-nav {
   padding: 0.5rem;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 2rem;
   flex-direction: row;
@@ -73,4 +74,17 @@ body {
 
 a {
   text-decoration: none;
+}
+
+main {
+  margin-top: 5em;
+  min-height: 75vh;
+}
+
+section, footer {
+  padding: 2em;
+}
+
+footer {
+  border-top: solid 2px #000;
 }

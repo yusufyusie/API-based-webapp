@@ -154,7 +154,7 @@ your server.
 
 👤 **Christopher Uduekwe**
 
-- GitHub: [@githubhandle](https://github.com/yusufyusie)
+- GitHub: [@githubhandle](https://github.com/chudisoft)
 - Twitter: [@twitterhandle](https://twitter.com/chrisuduekwe)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/christopher-uduekwe)
 
