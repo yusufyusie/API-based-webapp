@@ -15,3 +15,65 @@ body {
   height: 100%;
   background-color: #dfdfdf;
 }
+
+.app-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.navbar-logo {
+    height: auto;
+    display: fixed;
+    padding: 20px;
+    padding-left: 22rem;    
+    list-style: none;
+    background-image: url('../src/assets/images/logo.png');
+}
+
+.navbar {
+  display: flex;
+  height: 65px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: #2d2c38;
+  border: 2px solid #dc3545;
+  flex-direction: row;
+}
+
+.navbar-nav {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: row;
+  padding-left: 1rem;
+  list-style: none;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0px;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link:hover, #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+  color: #f05f40;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link {
+  color: rgba(255,255,255,.85);
+  font-size: .9rem;
+  font-weight: 900;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+}
+
+a:focus, a:hover {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
