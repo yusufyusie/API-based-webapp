@@ -81,6 +81,32 @@ main {
   min-height: 75vh;
 }
 
+div.meal-main-info {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+img.meal-main-img {
+  width: 100%;
+}
+
+div.meal-other-info {
+  display: flex;
+  flex-direction: column;
+  background-color: #9c8263;
+  padding: 0.5rem;
+}
+
+.meal-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  overflow-wrap: anywhere;
+}
+
 section, footer {
   padding: 2em;
 }

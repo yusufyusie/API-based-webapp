@@ -1,5 +1,5 @@
 const displayMeals = async () => {
-    const request = await fetch('url');
+    const request = await fetch('www.themealdb.com/api/json/v1/1/search.php?s=');
     const response = await request.json();
     const section = document.querySelector('.meals-card');
     response.forEach(async (meal) => {  
