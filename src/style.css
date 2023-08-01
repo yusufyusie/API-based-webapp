@@ -87,4 +87,11 @@ section, footer {
 
 footer {
   border-top: solid 2px #000;
+  display: flex;
+  justify-content: center;
+  bottom: 3rem;
+  left: 0;
+  right: 0;
+  position: fixed;
+  font-weight: 900;
 }
