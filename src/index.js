@@ -1,6 +1,4 @@
 import './style.css';
-import displayMeals from './modules/cards/mealCard.js';
+import mealUI from './modules/cards/ui.js';
 
-window.onload = () => {
-  displayMeals();
-};
+mealUI();

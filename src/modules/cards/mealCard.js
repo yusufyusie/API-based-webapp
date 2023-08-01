@@ -1,21 +1,28 @@
-const displayMeals = async () => {
-    const request = await fetch('www.themealdb.com/api/json/v1/1/search.php?s=');
-    const response = await request.json();
-    const section = document.querySelector('.meals-card');
-    response.forEach(async (meal) => {  
-      section.innerHTML += `
-        <ul id=${meal.id} class="meal-ul">
-          <div class="meal-main-info meal-div">
-            <img src="${meal.imageId}" class="meal-main-img" alt="${meal.title}" />
-          </div>
-          <div class="meal-other-info">
-            <div class="meal-div">
-              <h2 class="meal-title">${meal.title}</h2>
-            </div>
-          </div>
-        </ul>
-      `;
-    });
-  };
+const mealCard = (title, id, imageId, likeNum) => {
+const board = document.querySelector('.meals-card');
 
-  export default displayMeals;
+const ul = document.createElement('ul');
+ul.className = 'mealItem';
+const strUl = document.createElement('ul');
+strUl.className = 'strUl';
+const likeUl = document.createElement('ul');
+likeUl.className = 'likeUl';
+const buttonUl = document.createElement('ul');
+buttonUl.className = 'buttonUl';
+
+const buttonComment = document.createElement('ul');
+buttonComment.className = 'button';
+
+ul.innerHTML = `<img class='thumb' src='${imageId}'>`;
+strUl.innerHTML = `<span>${title}</span>`;
+likeUl.innerHTML = `<span class='hide'>${id}</span><ul class="stop">${likeNum}</ul><p class="stop">Likes</p>`;
+buttonComment.innerHTML = `<div>Comments</div><span class='hide'>${id}</span>`;
+
+strUl.appendChild(likeUl);
+ul.appendChild(strUl);
+buttonUl.appendChild(buttonComment);
+ul.appendChild(buttonUl);
+board.appendChild(ul);
+};
+
+  export default mealCard;
