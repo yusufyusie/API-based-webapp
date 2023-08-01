@@ -25,13 +25,12 @@ body {
 }
 
 .navbar-logo {
-    height: auto;
-    display: fixed;
-    margin-left: 1.5rem;
-    padding: 18px;
-    padding-left: 18rem;    
-    list-style: none;
-    background-image: url('../src/assets/images/logo.png');
+  height: auto;
+  margin-left: 1.5rem;
+  padding: 18px;
+  padding-left: 18rem;
+  list-style: none;
+  background-image: url('../src/assets/images/logo.png');
 }
 
 .navbar {
@@ -56,23 +55,20 @@ body {
   list-style: none;
   box-sizing: border-box;
   position: sticky;
-  top: 0px;
+  top: 0;
 }
 
-#mainNav .navbar-nav > li.nav-item > a.nav-link:hover, #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-  color: #f05f40;
-}
-
-#mainNav .navbar-nav > li.nav-item > a.nav-link {
-  color: rgba(255,255,255,.85);
-  font-size: .9rem;
+.navbar-nav > li.nav-item > a.nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.9rem;
   font-weight: 900;
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
 }
 
-a:focus, a:hover {
-  color: #fff;
+.navbar-nav > li.nav-item > a.nav-link:hover,
+.navbar-nav > li.nav-item > a.nav-link:focus {
+  color: #f05f40;
 }
 
 a {
