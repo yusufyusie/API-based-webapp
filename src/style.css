@@ -27,8 +27,9 @@ body {
 .navbar-logo {
     height: auto;
     display: fixed;
-    padding: 20px;
-    padding-left: 22rem;    
+    margin-left: 1.5rem;
+    padding: 18px;
+    padding-left: 18rem;    
     list-style: none;
     background-image: url('../src/assets/images/logo.png');
 }
