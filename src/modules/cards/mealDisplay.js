@@ -6,7 +6,7 @@ const URL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/
 const mealDisplay = async () => {
     const response = await fetch(URL);
     const likes = await response.json();
-  
+
     const data = await displayMeals();
     data.meals.forEach((meal) => {
       let likeNum = 0;
@@ -18,5 +18,5 @@ const mealDisplay = async () => {
       mealCard(meal.strMeal, meal.idMeal, meal.strMealThumb, likeNum, meal.strTags);
     });
   };
-  
+
   export default mealDisplay;
