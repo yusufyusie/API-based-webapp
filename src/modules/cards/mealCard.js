@@ -22,7 +22,7 @@ buttonUl.className = 'buttonDiv';
 
 ul.innerHTML = `<img class='thumb' src='${imageId}'>`;
 strUl.innerHTML = `<span>${title}</span>`;
-likeUl.innerHTML = `<span class='hide'>${id}</span><img class='imgLike' src='${like}'><ul class="stop">${likeNum}</ul><p class="stop">Likes</p>`;
+likeUl.innerHTML = `<span class='hide'>${id}</span><ul class="stop">${likeNum}</ul><p class="stop">Likes</p>`;
 
 strUl.appendChild(likeUl);
 ul.appendChild(strUl);
