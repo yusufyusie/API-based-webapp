@@ -1,7 +1,5 @@
 <a name="readme-top"></a>
 <div align="center">
-  <img src="assets/images/logo.jpg" alt="logo" width="140"  height="auto" />
-  <br/>
   <h3><b> api-based-webapp Project</b></h3>
 </div>
 
@@ -9,26 +7,27 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-  - [🚀 Project Presentation](#project-presentation)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
-- [📝 License](#license)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 \[ api-based-webapp\] ](#--api-based-webapp-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [🚀 Project Presentation ](#-project-presentation-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+    - [Deployment](#deployment)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [❓ FAQ (OPTIONAL) ](#-faq-optional-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -149,7 +148,7 @@ your server.
 👤 **Yesuf Fenta**
 
 - GitHub: [@githubhandle](https://github.com/yusufyusie)
-- Twitter: [@twitterhandle](https://twitter.com/yusufyusie)
+- Twitter: [@twitterhandle](https://twitter.com/yusufyusiee)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/yusufyusie)
 
 👤 **Christopher Uduekwe**
