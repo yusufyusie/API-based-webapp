@@ -1,9 +1,8 @@
-import MealList from './modules/meallist.js';
+import MealList from './modules/mealPopup.js';
 import './style.css';
 
-const mealNew = new MealList();
-
 document.body.onload = () => {
-  mealNew.getMeal(null, 52772);
+  const mealNew = new MealList(52772);
+  mealNew.getMeal(null);
   // if (mealNew.gameId === null) mealNew.createApp();
 };

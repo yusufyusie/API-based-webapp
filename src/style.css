@@ -176,6 +176,27 @@ footer {
   font-weight: 400;
 }
 
+.comment-form, .comment-list {
+  padding: 1em 0;
+}
+
+.comment-form {
+  max-width: 10em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.comment-list {
+  list-style: none;
+  width: 60%;
+}
+
+.comment-form input, .comment-form textarea, .comment-form button {
+  border-radius: 5px;
+  padding: 0.2em 0.5em;
+}
+
 /* Put all mobile code above this. */
 @media only screen and (min-width: 768px) {
   .col-md-4 {
