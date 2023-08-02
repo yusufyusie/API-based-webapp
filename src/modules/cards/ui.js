@@ -1,7 +1,7 @@
 import displayMeals from './getMeals.js';
 import mealCard from './mealCard.js';
 
-const URL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/ooCKDNVhVwx5nuC5j8LT/likes/';
+const URL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/';
 
 const mealUI = async () => {
   const request = await fetch(URL);
