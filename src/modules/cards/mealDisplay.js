@@ -24,7 +24,7 @@ const mealDisplay = async () => {
                 meal.idMeal,
                 meal.strMealThumb,
                 likeNum,
-                meal.strTags
+                meal.strTags,
              );
     });
   };
