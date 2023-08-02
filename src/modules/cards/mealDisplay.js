@@ -1,5 +1,6 @@
 import displayMeals from './getMeals.js';
 import mealCard from './mealCard.js';
+import mealCounter from './mealCounter.js';
 
 const URL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/iDkQTjuQFS7PeimALucH/likes/';
 
@@ -27,6 +28,7 @@ const mealDisplay = async () => {
                 meal.strTags,
              );
     });
+    mealCounter();
   };
 
   export default mealDisplay;
