@@ -1,4 +1,4 @@
 import './style.css';
-import mealCard from './modules/cards/mealCard.js';
+import mealDisplay from './modules/cards/mealDisplay.js';
 
-mealCard();
+mealDisplay();

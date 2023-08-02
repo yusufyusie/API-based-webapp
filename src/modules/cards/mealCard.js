@@ -1,5 +1,5 @@
 import like from '../likes/heart.svg';
-import displayMeals from './getMeals.js';
+import { addLike } from '../likes/addLike.js';
 
 const myLike = new Image();
 myLike.src = like;
@@ -28,11 +28,16 @@ strUl.appendChild(likeUl);
 ul.appendChild(strUl);
 ul.appendChild(buttonUl);
 board.appendChild(ul);
+
+likeUl.addEventListener('click', (e) => {
+  if (e.target.classList.contains('stop')) {
+    return;
+  }
+
+  addLike(e.target.previousElementSibling.textContent);
+  const sumlike = e.target.nextElementSibling.textContent;
+  e.target.nextElementSibling.textContent = parseInt(sumlike, 10) + 1;
+});
 };
 
-const data = await displayMeals();
-  data.meals.forEach((meal) => {
-    mealCard(meal.strMeal, meal.idMeal, meal.strMealThumb);
-  });
-
-  export default mealCard;
+export default mealCard;
