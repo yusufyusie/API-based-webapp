@@ -1,5 +1,5 @@
 import like from '../likes/heart.svg';
-import { addLike } from '../likes/addLike.js';
+import addLike from '../likes/addLike.js';
 
 const myLike = new Image();
 myLike.src = like;

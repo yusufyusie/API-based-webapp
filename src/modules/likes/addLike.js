@@ -1,4 +1,4 @@
-const URL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/hMYaxRWDnnbjDMdtxmy3/likes/';
+const URL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/iDkQTjuQFS7PeimALucH/likes/';
 
 const addLike = async (idMeal) => {
     const response = await fetch(URL, {
@@ -10,11 +10,8 @@ const addLike = async (idMeal) => {
         'Content-type': 'application/json; charset=UTF-8',
       },
     });
-
-    .then(async (response) => {
     const data = await response.json();
     return data;
-    });
   };
 
   export default addLike;
