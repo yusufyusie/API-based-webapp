@@ -26,14 +26,11 @@ strInstr.className = 'strInstr';
 const likeUl = document.createElement('ul');
 likeUl.className = 'likeDiv';
 
-const buttonUl = document.createElement('ul');
-buttonUl.className = 'buttonDiv';
-
 ul.innerHTML = `<img class='thumb' src='${imageId}'>`;
 strUl.innerHTML = `<span>${title}</span>`;
 strCat.innerHTML = `<span>${category}</span>`;
 strArea.innerHTML = `<span>${area}</span>`;
-strInstr.innerHTML = `<span>${instructions}</span>`;
+strInstr.innerHTML = `<p>${instructions}</p>`;
 likeUl.innerHTML = `<span class='hide'>${id}</span><img class='imgLike' src='${like}'><ul class="stop">${likeNum}</ul><p class="stop">Likes</p>`;
 
 strUl.appendChild(likeUl);
@@ -41,7 +38,6 @@ ul.appendChild(strUl);
 ul.appendChild(strCat);
 ul.appendChild(strArea);
 ul.appendChild(strInstr);
-ul.appendChild(buttonUl);
 board.appendChild(ul);
 
 likeUl.addEventListener('click', (e) => {

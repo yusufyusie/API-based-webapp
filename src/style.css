@@ -81,6 +81,103 @@ main {
   min-height: 75vh;
 }
 
+.meals-card {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .meals-card {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .meals-card::after {
+    content: '';
+    flex: auto;
+  }
+}
+
+.mealItem {
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid darkgray;
+  border-radius: 8px;
+  gap: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .mealItem {
+    flex-direction: column;
+    margin: 1rem 0.5rem;
+    padding: 1rem 0.5rem;
+    width: 44%;
+    justify-content: flex-start;
+    gap: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .mealItem {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .mealItem {
+    width: 23%;
+  }
+}
+
+.strUl {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: large;
+}
+
+.likeUl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+
+.thumb {
+  height: 220px;
+  width: 220px;
+  border-radius: 5%;
+  align-self: center;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+.imgLike {
+  height: 1.5rem;
+}
+
+span {
+  margin: 1rem;
+  font-size: 1.6rem;
+}
+
+.hide {
+  display: none;
+}
+
+
+p {
+  margin: 0.2rem;
+  font-size: 1rem;
+}
+
 section,
 footer {
   padding: 2em;
