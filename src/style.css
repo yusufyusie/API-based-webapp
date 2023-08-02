@@ -183,14 +183,22 @@ footer {
   padding: 2em;
 }
 
+.author {
+  font-weight: 900;
+  font-family: "Raleway", sans-serif;
+  color: #3763f4;
+}
+
 footer {
-  border-top: solid 2px #000;
+  border-top: solid 2px #dc3545;
   display: flex;
   justify-content: center;
-  bottom: 2rem;
+  bottom: 0;
   left: 0;
   right: 0;
   position: fixed;
   font-weight: 900;
-  padding: 0.5rem;
+  padding: 1.5rem;  
+  background-color: #2d2c38; 
+  color: rgba(255, 255, 255, 0.85);
 }
