@@ -15,7 +15,17 @@ const mealDisplay = async () => {
           likeNum = item.likes;
         }
       });
-      mealCard(meal.strMeal, meal.idMeal, meal.strMealThumb, likeNum, meal.strTags);
+
+      mealCard(
+                meal.strMeal,
+                meal.strCategory,
+                meal.strArea,
+                meal.strInstructions,
+                meal.idMeal,
+                meal.strMealThumb,
+                likeNum,
+                meal.strTags
+             );
     });
   };
 
