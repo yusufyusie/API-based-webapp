@@ -1,4 +1,4 @@
 import './style.css';
-import mealUI from './modules/cards/ui.js';
+import mealCard from './modules/cards/mealCard.js';
 
-mealUI();
+mealCard();
