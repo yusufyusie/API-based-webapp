@@ -24,13 +24,13 @@ const strInstr = document.createElement('ul');
 strInstr.className = 'strInstr';
 
 const likeUl = document.createElement('ul');
-likeUl.className = 'likeDiv';
+likeUl.className = 'likeUl';
 
 ul.innerHTML = `<img class='thumb' src='${imageId}'>`;
 strUl.innerHTML = `<span>${title}</span>`;
 strCat.innerHTML = `<span>${category}</span>`;
 strArea.innerHTML = `<span>${area}</span>`;
-strInstr.innerHTML = `<p>${instructions}</p>`;
+strInstr.innerHTML = `<p class='hide'>${instructions}</p>`;
 likeUl.innerHTML = `<span class='hide'>${id}</span><img class='imgLike' src='${like}'><ul class="stop">${likeNum}</ul><p class="stop">Likes</p>`;
 
 strUl.appendChild(likeUl);

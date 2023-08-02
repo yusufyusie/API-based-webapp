@@ -82,8 +82,10 @@ main {
 }
 
 .meals-card {
+  position: relative;
   display: flex;
   flex-direction: column;
+  background-color: transparent;
 }
 
 @media only screen and (min-width: 768px) {
@@ -163,6 +165,14 @@ main {
   height: 1.5rem;
 }
 
+.imgLike:hover {
+  filter: invert(8%) sepia(98%) saturate(6374%) hue-rotate(246deg) brightness(111%) contrast(147%);
+}
+
+.imgLike:active {
+  filter: invert(42%) sepia(98%) saturate(7352%) hue-rotate(354deg) brightness(98%) contrast(124%);
+}
+
 span {
   margin: 1rem;
   font-size: 1.6rem;
@@ -171,7 +181,6 @@ span {
 .hide {
   display: none;
 }
-
 
 p {
   margin: 0.2rem;
