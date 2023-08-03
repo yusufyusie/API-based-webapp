@@ -163,6 +163,11 @@ main {
   margin-bottom: 0.1rem;
 }
 
+.thumb:hover {
+  filter: drop-shadow(0 0 0.75rem crimson);
+  transform: scale(1.2);
+}
+
 .buttonDiv {
   display: flex;
   align-items: center;
