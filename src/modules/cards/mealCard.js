@@ -1,4 +1,4 @@
-import like from '../likes/heart.svg';
+import like from '../likes/heart.gif';
 import addLike from '../likes/addLike.js';
 
 const myLike = new Image();

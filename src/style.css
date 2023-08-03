@@ -110,7 +110,8 @@ main {
   display: flex;
   flex-direction: row;
   border: 2px solid darkgray;
-  border-radius: 8px;
+  border-radius: 8px;  
+  background-color: #fff;
   gap: 1rem;
 }
 
