@@ -1,4 +1,4 @@
-import like from '../likes/heart.svg';
+import like from '../likes/heart.gif';
 import addLike from '../likes/addLike.js';
 
 const myLike = new Image();
@@ -24,23 +24,28 @@ const strInstr = document.createElement('ul');
 strInstr.className = 'strInstr';
 
 const likeUl = document.createElement('ul');
-likeUl.className = 'likeDiv';
+likeUl.className = 'likeUl';
 
 const buttonUl = document.createElement('ul');
-buttonUl.className = 'buttonDiv';
+  buttonUl.className = 'buttonUl';
+
+const buttonComment = document.createElement('ul');
+  buttonComment.className = 'button';
 
 ul.innerHTML = `<img class='thumb' src='${imageId}'>`;
 strUl.innerHTML = `<span>${title}</span>`;
-strCat.innerHTML = `<span>${category}</span>`;
-strArea.innerHTML = `<span>${area}</span>`;
-strInstr.innerHTML = `<span>${instructions}</span>`;
+strCat.innerHTML = `<span class='catlablel'>Catgory:- ${category}</span>`;
+strArea.innerHTML = `<span class='arealabel'>Area:- ${area}</span>`;
+strInstr.innerHTML = `<p class='hide'>${instructions}</p>`;
 likeUl.innerHTML = `<span class='hide'>${id}</span><img class='imgLike' src='${like}'><ul class="stop">${likeNum}</ul><p class="stop">Likes</p>`;
+buttonComment.innerHTML = `<ul>Comments</ul><span class='hide'>${id}</span>`;
 
 strUl.appendChild(likeUl);
 ul.appendChild(strUl);
 ul.appendChild(strCat);
 ul.appendChild(strArea);
 ul.appendChild(strInstr);
+buttonUl.appendChild(buttonComment);
 ul.appendChild(buttonUl);
 board.appendChild(ul);
 

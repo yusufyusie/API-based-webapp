@@ -8,6 +8,8 @@ const addLike = async (idMeal) => {
       }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
+        'access-control-allow-origin': '*',
+        'Access-Control-Allow-Credentials': 'true',
       },
     });
     const data = await response.json();
