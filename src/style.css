@@ -110,7 +110,7 @@ main {
   display: flex;
   flex-direction: row;
   border: 2px solid darkgray;
-  border-radius: 8px;  
+  border-radius: 8px;
   background-color: #fff;
   gap: 1rem;
 }
@@ -170,7 +170,7 @@ main {
 }
 
 .button {
-  background-color:  #dc3dcb;;
+  background-color: #dc3dcb;
   border: 1px solid #000;
   border-radius: 3px;
   width: 9rem;
@@ -184,7 +184,7 @@ main {
 }
 
 .button:hover {
-  background-color: #19f5aa;;
+  background-color: #19f5aa;
   transition: 1s;
 }
 
@@ -235,7 +235,7 @@ footer {
   right: 0;
   position: fixed;
   font-weight: 900;
-  padding: 1.5rem;  
-  background-color: #2d2c38; 
+  padding: 1.5rem;
+  background-color: #2d2c38;
   color: rgba(255, 255, 255, 0.85);
 }
