@@ -36,6 +36,51 @@
       </ul>
     </nav>
   </header>
+  <section>
+    <div class="modal">
+      <div class="modal-container">
+        <div class="modal-header">
+          <span id="modal-close" class="modal-close" title="Close">
+            <i class="fa fa-close"></i>
+          </span>
+          <h2 id="modal-header"></h2>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <img id="itemImage" src="#" alt="" />
+            <h3 id="itemTitle"></h3>
+          </div>
+          <div class="col-md-4">
+            <p>Category: <span id="category"></span></p>
+            <p>Area: <span id="area"></span></p>
+            <p>Tags: <span id="tags"></span></p>
+            <a id="youtube" href="#"><i class="fab fa-2x fa-youtube"></i></a>
+          </div>
+          <div class="col-md-4">
+            <h4>Ingredients:</h4>
+            <ol class="ingredients">
+            </ol>
+          </div>
+          <div>
+            <h4>Instruction:</h4>
+            <p class="instruction"></p>
+          </div>
+        </div>
+        <div class="row bg-primary mtb-2">
+          <div class="comment-list-section">
+            <p class="col-md-12">Comments (<span id="comment-total"></span>): </p>
+            <ul class="comment-list">
+            </ul>
+          </div>
+          <form class="comment-form">
+            <input type="text" id="comment-name" placeholder="Your Name" />
+            <textarea id="comment-insight" placeholder="Your Insight" ></textarea>
+            <button type="submit" id="comment-button"><i></i>Comment</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
   <main class="main">
     <section id="section" class="meals-container">
       <ul class="meals-card">
