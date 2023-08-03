@@ -10,9 +10,11 @@ class MealPopup {
     this.modal = document.querySelector('.modal');
     this.commentList = document.querySelector('.comment-list');
     this.commentForm = document.querySelector('.comment-form');
+    this.commentTotal = document.querySelector('#comment-total');
     this.list = document.querySelector('.comment-list');
     this.mealAppIdName = 'meallist';
     this.appId = '';
+    this.comments = [];
     this.lblMessage = document.querySelector('#message');
     this.baseUrl = 'https://www.themealdb.com/api/json/v1/1/';
     this.baseUrlInvolve = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/';
@@ -88,6 +90,8 @@ class MealPopup {
     const elComment = document.createElement('label');
     const elTime = document.createElement('label');
 
+    li.className = 'bg';
+
     elName.textContent = `${comment.username}: `;
     elComment.textContent = `${comment.comment}`;
     elTime.textContent = `${comment.creation_date} `;
@@ -159,6 +163,7 @@ class MealPopup {
 
   getComments = (async (btnRefresh = null) => {
     this.list.innerText = '';
+    this.commentTotal.innerText = 0;
     if (btnRefresh !== null) btnRefresh.childNodes[0].className = ('fa fa-spin fa-spinner');
     const url = `${this.baseUrlInvolve + this.appId}/comments?item_id=${this.mealId}`;
     const response = await fetch(url, {
@@ -172,7 +177,6 @@ class MealPopup {
     });
     const comments = await response.json();
     if (comments.error) {
-      console.log(comments.error);
       Toastify({
         text: comments.error.message,
         className: 'info',
@@ -180,16 +184,18 @@ class MealPopup {
           background: 'linear-gradient(to right, #00b09b, #96c93d)',
         },
       }).showToast();
-    } else {
-      console.log(comments);
-      if (comments !== undefined) {
+    } else if (comments !== undefined) {
+        this.comments = comments;
         comments.forEach((element) => {
-          console.log(element);
           this.showComment(element);
         });
-      }
+        this.countComments();
     }
     if (btnRefresh !== null) btnRefresh.childNodes[0].className = '';
+  });
+
+  countComments = (() => {
+    this.commentTotal.innerText = this.comments.length;
   });
 }
 

@@ -146,7 +146,7 @@ footer {
   gap: 0.5em;
 }
 
-.col-md-6, .col-md-4 {
+.col-md-12, .col-md-6, .col-md-4 {
   max-width: 100%;
 }
 
@@ -165,7 +165,6 @@ footer {
 }
 #modal-section {
   background-color: #fcfafa;
-  width: 40em;
   max-width: 90%;
   font-size: large;
   padding: 2em 0;
@@ -176,25 +175,79 @@ footer {
   font-weight: 400;
 }
 
-.comment-form, .comment-list {
+.comment-form, .comment-list-section {
   padding: 1em 0;
 }
 
 .comment-form {
-  max-width: 10em;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5em;
+  flex-direction: column;
+  min-width: 38%;
 }
 
 .comment-list {
   list-style: none;
-  width: 60%;
 }
 
 .comment-form input, .comment-form textarea, .comment-form button {
   border-radius: 5px;
   padding: 0.2em 0.5em;
+  width: 100%;
+}
+
+.comment-form input, .comment-form button {
+  height: 3em;
+}
+.comment-form textarea {
+  height: 10em;
+}
+
+.bg {
+  padding: 1em;
+  border-bottom: #d2d2d2 solid 1px;
+}
+
+.comment-list-section p {
+  padding: 0 0 1em 1em;
+}
+
+.mtb-2 {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.comment-list li:nth-child(odd) {
+  background-color: #5ca6f5;
+  color: #fff;
+}
+
+.comment-list li:hover,
+.comment-form button:hover {
+  background-color: #303030;
+  color: #fff;
+  cursor: pointer;
+}
+
+.bg-primary {
+  background-color: #3295d0;
+  /* background-color: #5d9ee3; */
+}
+
+.bg-primary-light {
+  background-color: #62a3e7;
+}
+
+.comment-list-section {
+  max-width: 90%;
+  font-size: large;
+  padding: 2em 0;
+}
+
+.comment-list-section h2 {
+  color: #3d3d3d;
+  font-weight: 400;
 }
 
 /* Put all mobile code above this. */
@@ -206,8 +259,12 @@ footer {
     width: 45%;
   }
   
-.modal-container {
-  padding: 2em 5em;
-}
+  .modal-container {
+    padding: 2em 5em;
+  }
 
+  .comment-list-section {
+    width: 60%;
+  }
+  
 }
