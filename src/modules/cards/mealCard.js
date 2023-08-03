@@ -65,8 +65,8 @@ likeUl.addEventListener('click', (e) => {
   e.target.nextElementSibling.textContent = parseInt(sumlike, 10) + 1;
 });
 
-const overlay = document.querySelector('.open');
-const cancel = document.querySelector('.close');
+const overlay = document.querySelector('.open-popup');
+const cancel = document.querySelector('.close-popup');
 cancel.appendChild(myCancel);
 
 buttonComment.addEventListener('click', (e) => {

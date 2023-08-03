@@ -238,6 +238,109 @@ p {
   font-size: 1rem;
 }
 
+#submit {
+  font-family: 'Poppins', serif;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.imgCancel {
+  height: 20px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(282deg) brightness(104%) contrast(106%);
+  cursor: pointer;
+}
+
+.open-popup {
+  background-color: rgba(3, 0, 0, 0.9);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+}
+
+.close-popup {
+  margin-left: 74.5%;
+  margin-top: 3.5%;
+  position: fixed;
+  border-radius: 5px;
+}
+
+.comments-board {
+  padding: 5px;
+  margin: 3% auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 700px;
+  height: 565px;
+  background-color: rgb(255, 0, 0, 0.9);
+  border-radius: 10px;
+}
+
+.comments-board #imgThumb {
+  width: 400px;
+  height: 400px;
+  border-radius: 5%;
+  order: -1;
+  margin: 0%;
+}
+
+.comments-board button {
+  width: 25%;
+  padding: 1% 0%;
+  border-radius: 5px;
+  margin-left: 10%;
+}
+
+.comments-board h2,
+h4 {
+  margin: 10% 10%;
+}
+
+.comments-board h1 {
+  font-size: 30px;
+}
+
+.comments-board h3 {
+  font-size: 14px;
+}
+
+.comments-board input {
+  margin: 1% 10%;
+  width: 60%;
+  height: 20px;
+  border-radius: 5px;
+  padding: 0%;
+}
+
+.comments-board #comment {
+  height: 70px;
+}
+
+.divComments {
+  display: flex;
+  margin-top: 3%;
+  border-radius: 5px;
+  background-color: white;
+  width: 175%;
+  overflow-x: auto;
+  transition: 0.5s;
+}
+
+.comment {
+  margin: 0.8px;
+  padding: 2px;
+  border-radius: 5px;
+  background-color: rgb(206, 121, 138, 0.4);
+}
+
 section,
 footer {
   padding: 2em;

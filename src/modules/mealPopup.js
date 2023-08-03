@@ -4,7 +4,7 @@ const commentCard = (name, date, comment) => {
   const comments = document.querySelector('.divComments');
   const div = document.createElement('div');
   div.className = 'comment';
-  div.innerHTML = `<h5>${name}</h5><h6>${comment}</h6><h6>${date}</h6>`;
+  div.innerHTML = `<h4>${name}</h4><h5>${comment}</h5><h5>${date}</h5>`;
   comments.appendChild(div);
 };
 
@@ -17,11 +17,11 @@ const getComments = async (idMeal) => {
 };
 
 const commentCounter = () => {
-  const commentCount = document.getElementsByClassName('comment').length;
-  return commentCount;
+  const commentList = document.getElementsByClassName('.comment-list').length;
+  return commentList;
 };
 
-const commentary = async (idMeal) => {
+const commentArray = async (idMeal) => {
   const counter = document.querySelector('.divCounter');
   const div = document.createElement('div');
   div.className = 'counting';
@@ -40,15 +40,15 @@ const postComment = async (name, comment, idMeal) => {
   const response = await fetch(URL, {
     method: 'POST',
     body: JSON.stringify({
-      // eslint-disable-next-line
       item_id: idMeal,
-      // eslint-disable-next-line
       username: name,
-      // eslint-disable-next-line
+      // eslint-disable-next-line object-shorthand
       comment: comment,
     }),
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
+      'access-control-allow-origin': '*',
+      'Access-Control-Allow-Credentials': 'true',
     },
   });
   const data = await response.json();
@@ -75,7 +75,7 @@ const commentsCard = (title, tag, imageThumb, id, area) => {
     tag = '';
   }
 
-  divText.innerHTML = `<h2>${title}</h2><h4>${area} ${tag}</h4>`;
+  divText.innerHTML = `<h1>${title}</h1><h3>${area} ${tag}</h3>`;
 
   const inputName = document.createElement('input');
   inputName.id = 'name';
@@ -103,7 +103,7 @@ const commentsCard = (title, tag, imageThumb, id, area) => {
   divText.appendChild(form);
   divText.appendChild(divCounter);
   commentsBoard.appendChild(divTable);
-  commentary(id);
+  commentArray(id);
 
   form.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -116,7 +116,7 @@ const commentsCard = (title, tag, imageThumb, id, area) => {
       userName.value = '';
       comment.value = '';
       divTable.innerHTML = '';
-      commentary(id);
+      commentArray(id);
     }, 2000);
   });
 };
@@ -131,5 +131,5 @@ const mealPopup = async (idMeal) => {
 };
 
 export {
- mealPopup, commentsCard, postComment, commentary, commentCounter, getComments, commentCard,
+ mealPopup, commentsCard, postComment, commentArray, commentCounter, getComments, commentCard,
 };
