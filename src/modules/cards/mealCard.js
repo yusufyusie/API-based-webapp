@@ -34,11 +34,11 @@ const buttonComment = document.createElement('ul');
 
 ul.innerHTML = `<img class='thumb' src='${imageId}'>`;
 strUl.innerHTML = `<span>${title}</span>`;
-strCat.innerHTML = `<span>${category}</span>`;
-strArea.innerHTML = `<span>${area}</span>`;
+strCat.innerHTML = `<span class='catlablel'>Catgory:- ${category}</span>`;
+strArea.innerHTML = `<span class='arealabel'>Area:- ${area}</span>`;
 strInstr.innerHTML = `<p class='hide'>${instructions}</p>`;
 likeUl.innerHTML = `<span class='hide'>${id}</span><img class='imgLike' src='${like}'><ul class="stop">${likeNum}</ul><p class="stop">Likes</p>`;
-buttonComment.innerHTML = `<div>Comments</div><span class='hide'>${id}</span>`;
+buttonComment.innerHTML = `<ul>Comments</ul><span class='hide'>${id}</span>`;
 
 strUl.appendChild(likeUl);
 ul.appendChild(strUl);
