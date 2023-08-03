@@ -1,9 +1,15 @@
 import like from '../likes/heart.gif';
+import closeIcon from '../likes/x-circle-fill.svg';
 import addLike from '../likes/addLike.js';
+import { mealPopup } from '../mealPopup.js';
 
 const myLike = new Image();
 myLike.src = like;
 myLike.classList = 'imgLike';
+
+const myCancel = new Image();
+myCancel.src = closeIcon;
+myCancel.classList = ('imgCancel');
 
 const mealCard = (title, category, area, instructions, id, imageId, likeNum) => {
 const board = document.querySelector('.meals-card');
@@ -57,6 +63,25 @@ likeUl.addEventListener('click', (e) => {
   addLike(e.target.previousElementSibling.textContent);
   const sumlike = e.target.nextElementSibling.textContent;
   e.target.nextElementSibling.textContent = parseInt(sumlike, 10) + 1;
+});
+
+const overlay = document.querySelector('.open');
+const cancel = document.querySelector('.close');
+cancel.appendChild(myCancel);
+
+buttonComment.addEventListener('click', (e) => {
+  overlay.style.display = 'block';
+  mealPopup(e.target.nextElementSibling.textContent);
+});
+
+cancel.addEventListener('click', () => {
+  overlay.style.display = 'none';
+  document.querySelector('.comments-board').innerHTML = '';
+});
+
+cancel.addEventListener('click', () => {
+  overlay.style.display = 'none';
+  document.querySelector('.comments-board').innerHTML = '';
 });
 };
 
