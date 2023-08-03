@@ -5,7 +5,7 @@ const myLike = new Image();
 myLike.src = like;
 myLike.classList = 'imgLike';
 
-const mealCard = (title, id, imageId, likeNum) => {
+const mealCard = (title, category, area, instructions, id, imageId, likeNum) => {
 const board = document.querySelector('.meals-card');
 
 const ul = document.createElement('ul');
@@ -13,6 +13,15 @@ ul.className = 'mealItem';
 
 const strUl = document.createElement('ul');
 strUl.className = 'strUl';
+
+const strCat = document.createElement('ul');
+strCat.className = 'strCat';
+
+const strArea = document.createElement('ul');
+strArea.className = 'strArea';
+
+const strInstr = document.createElement('ul');
+strInstr.className = 'strInstr';
 
 const likeUl = document.createElement('ul');
 likeUl.className = 'likeDiv';
@@ -22,10 +31,16 @@ buttonUl.className = 'buttonDiv';
 
 ul.innerHTML = `<img class='thumb' src='${imageId}'>`;
 strUl.innerHTML = `<span>${title}</span>`;
-likeUl.innerHTML = `<span class='hide'>${id}</span><ul class="stop">${likeNum}</ul><p class="stop">Likes</p>`;
+strCat.innerHTML = `<span>${category}</span>`;
+strArea.innerHTML = `<span>${area}</span>`;
+strInstr.innerHTML = `<span>${instructions}</span>`;
+likeUl.innerHTML = `<span class='hide'>${id}</span><img class='imgLike' src='${like}'><ul class="stop">${likeNum}</ul><p class="stop">Likes</p>`;
 
 strUl.appendChild(likeUl);
 ul.appendChild(strUl);
+ul.appendChild(strCat);
+ul.appendChild(strArea);
+ul.appendChild(strInstr);
 ul.appendChild(buttonUl);
 board.appendChild(ul);
 
