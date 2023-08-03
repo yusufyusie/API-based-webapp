@@ -148,6 +148,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 1.2rem;
   margin-bottom: 0.1rem;
   padding-bottom: 0.1rem;
 }
@@ -155,10 +156,35 @@ main {
 .thumb {
   height: 220px;
   width: 220px;
-  border-radius: 5%;
+  border-radius: 1rem;
   align-self: center;
-  margin-top: 1%;
-  margin-bottom: 2%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.1rem;
+}
+
+.buttonDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  background-color:  #dc3dcb;;
+  border: 1px solid #000;
+  border-radius: 3px;
+  width: 9rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-family: "Raleway", sans-serif;
+  margin-left: 4.3rem;
+  margin-top: 1rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #19f5aa;;
+  transition: 1s;
 }
 
 .imgLike {
@@ -166,6 +192,7 @@ main {
 }
 
 .imgLike:hover {
+  cursor: pointer;
   filter: invert(8%) sepia(98%) saturate(6374%) hue-rotate(246deg) brightness(111%) contrast(147%);
 }
 
