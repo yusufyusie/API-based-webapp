@@ -254,40 +254,35 @@ p {
   opacity: 95%;
   backdrop-filter: blur(80px);
   transition: height 1s ease;
-  padding: 20px;
-  width: 100%;
-  height: 100%;
+  padding: 1.5rem;
 }
 
 .close-popup {
-  margin-left: 76.5%;
+  margin-left: 75.5%;
   margin-top: 3.5%;
   position: fixed;
   border-radius: 5px;
 }
 
 .comments-board {
-  padding: 5px;
+  padding-top: 0.2rem;
+  padding-left: 2rem;
   margin: 3% auto;
   display: flex;
-  
-  background-color: #fff;
   border: 5px solid grey;
   border-radius: 10px;
   overflow: auto;
-  display: flex;
   flex-direction: column;
   width: 850px;
   height: 500px;
-  background-color: #a3cfbb;;
-  border-radius: 10px;
+  background-color: #a3cfbb;
   
 }
 
 .comments-board #imgThumb {
   width: 300px;
   height: 300px;
-  border-radius: 5%;
+  border-radius: 1rem;
   order: -1;
   margin: 1rem;
 }
@@ -299,40 +294,39 @@ p {
   margin-left: 10%;
 }
 
-.comments-board h2,
-h4 {
-  margin: 10% 10%;
-}
-
-.comments-board h2 {
-  font-size: 30px;
-}
-
 .comments-board h4 {
-  font-size: 14px;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.comments-board h5 {
+  font-size: 1.2rem;
 }
 
 .comments-board input {
   margin: 1% 10%;
-  width: 30rem;;
+  width: 25rem;;
   height: 30px;
   border-radius: 5px;
-  padding: 0%;
+  padding: .5rem;
   border-color: #fed136;
   box-shadow: none;
 }
 
 .comments-board #comment {
-  height: 70px;
+  height: 6rem;
 }
 
 .divComments {
-  margin-top: -8%;
   border-radius: 5px;
+  padding: 0.1rem;
+  margin: 1rem;
   background-color: white;
 }
 
 .comment {
+  padding: 0.2rem;
+  margin: 0.8rem;
   background-color: rgb(206, 121, 138, 0.4);
 }
 
@@ -348,6 +342,7 @@ form {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  margin: 0.2rem;
 }
 
 section,

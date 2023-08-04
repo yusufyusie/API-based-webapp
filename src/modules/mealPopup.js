@@ -4,7 +4,7 @@ const commentCard = (name, date, comment) => {
   const comments = document.querySelector('.divComments');
   const div = document.createElement('div');
   div.className = 'comment';
-  div.innerHTML = `<h4>${name}</h4><h5>${comment}</h5><h5>${date}</h5>`;
+  div.innerHTML = `<h5>${date}<span>:-</span> ${name} ${comment}</h5>`;
   comments.appendChild(div);
 };
 
@@ -32,7 +32,7 @@ const commentArray = async (idMeal) => {
     commentCard(comment.username, comment.creation_date, comment.comment);
   });
   counter.innerHTML = '';
-  div.innerHTML = `<h4></h4><h4>Comments(${commentCounter()})</h4>`;
+  div.innerHTML = `<h4>Comments(${commentCounter()})</h4>`;
   counter.appendChild(div);
 };
 
@@ -57,7 +57,7 @@ const postComment = async (name, comment, idMeal) => {
   return data;
 };
 
-const commentsCard = (title, tag, imageThumb, id, area) => {
+const commentsCard = (title, tag, imageThumb, id, category, area, instructions) => {
   const commentsBoard = document.querySelector('.comments-board');
 
   const imgThumb = document.createElement('img');
@@ -77,7 +77,9 @@ const commentsCard = (title, tag, imageThumb, id, area) => {
     tag = '';
   }
 
-  divText.innerHTML = `<h1>${title}</h1><h3>${area} ${tag}</h3>`;
+  divText.innerHTML = `<h1>${title}</h1>
+                        <h3>${area} ${category} ${tag}</h3>
+                        <p>${instructions}</p>`;
 
   const inputName = document.createElement('input');
   inputName.id = 'name';
@@ -127,7 +129,15 @@ const mealPopup = async (idMeal) => {
   const data = await displayMeals();
   data.meals.forEach((meal) => {
     if (meal.idMeal === idMeal) {
-      commentsCard(meal.strMeal, meal.strTags, meal.strMealThumb, meal.idMeal, meal.strArea);
+      commentsCard(
+                    meal.strMeal,
+                    meal.strTags,
+                    meal.strMealThumb,
+                    meal.idMeal,
+                     meal.strCategory,
+                    meal.strArea,
+                    meal.strInstructions,
+                    );
     }
   });
 };
