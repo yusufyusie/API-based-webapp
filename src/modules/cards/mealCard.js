@@ -3,13 +3,13 @@ import closeIcon from '../likes/x-circle-fill.svg';
 import addLike from '../likes/addLike.js';
 import { mealPopup } from '../mealPopup.js';
 
-const myLike = new Image();
-myLike.src = like;
-myLike.classList = 'imgLike';
-
 const myCancel = new Image();
 myCancel.src = closeIcon;
 myCancel.classList = ('imgCancel');
+
+const myLike = new Image();
+myLike.src = like;
+myLike.classList = 'imgLike';
 
 const mealCard = (title, category, area, instructions, id, imageId, likeNum) => {
 const board = document.querySelector('.meals-card');
@@ -59,7 +59,6 @@ likeUl.addEventListener('click', (e) => {
   if (e.target.classList.contains('stop')) {
     return;
   }
-
   addLike(e.target.previousElementSibling.textContent);
   const sumlike = e.target.nextElementSibling.textContent;
   e.target.nextElementSibling.textContent = parseInt(sumlike, 10) + 1;
@@ -72,11 +71,6 @@ cancel.appendChild(myCancel);
 buttonComment.addEventListener('click', (e) => {
   overlay.style.display = 'block';
   mealPopup(e.target.nextElementSibling.textContent);
-});
-
-cancel.addEventListener('click', () => {
-  overlay.style.display = 'none';
-  document.querySelector('.comments-board').innerHTML = '';
 });
 
 cancel.addEventListener('click', () => {
