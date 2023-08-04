@@ -192,11 +192,12 @@ main {
   justify-content: center;
 }
 
+.comments-board button,
 .button {
   background-color: #dc3dcb;
   border: 1px solid #000;
   border-radius: 3px;
-  width: 9rem;
+  width: 8.5rem;
   font-size: 1.5rem;
   font-weight: 900;
   font-family: "Raleway", sans-serif;
@@ -286,16 +287,34 @@ p {
   margin: 1rem;
 }
 
-.comments-board button {
-  width: 25%;
-  padding: 1rem;
-  border-radius: 5px;
-  margin-left: 10%;
+.comments-board Label {
+  display: block;
+  font-size: 1.3em;
+  margin-block-start: 0.5rem;
+  margin-block-end: 0.2rem;
+  margin-inline-start: 5rem;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.comments-board h3 {
+  display: block;
+  font-size: 1.5rem;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  margin-inline-start: 5rem;
+  margin-inline-end: 0px;
 }
 
 .comments-board h4 {
+  display: block;
   font-size: 1.5rem;
   margin: 1rem;
+  margin-block-start: 2rem;
+  margin-block-end: 0.1rem;
+  margin-inline-start: 5rem;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
 
 .comments-board h5 {

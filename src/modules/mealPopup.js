@@ -78,8 +78,12 @@ const commentsCard = (title, tag, imageThumb, id, category, area, instructions) 
   }
 
   divText.innerHTML = `<h1>${title}</h1>
-                        <h3>${area} ${category} ${tag}</h3>
-                        <p>${instructions}</p>`;
+                        <h3>Area: ${area} | Catgory: ${category} | Tag: ${tag}</h3>
+                        <p>Instructions: ${instructions}</p>`;
+
+  const formLabel = document.createElement('label');
+  formLabel.id = 'label';
+  formLabel.textContent = 'Add your comment';
 
   const inputName = document.createElement('input');
   inputName.id = 'name';
@@ -96,7 +100,7 @@ const commentsCard = (title, tag, imageThumb, id, category, area, instructions) 
   submitButton.id = 'submit';
   submitButton.textContent = 'SUBMIT';
 
-  const inputs = [inputName, inputComment, submitButton];
+  const inputs = [formLabel, inputName, inputComment, submitButton];
 
   for (let i = 0; i < inputs.length; i += 1) {
     form.appendChild(inputs[i]);
