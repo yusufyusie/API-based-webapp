@@ -17,9 +17,11 @@ const getComments = async (idMeal) => {
 };
 
 const commentCounter = () => {
-  const commentList = document.getElementsByClassName('.comment-list').length;
-  return commentList;
+  const commentCount = document.getElementsByClassName('comment').length;
+  return commentCount;
 };
+
+export default commentCounter;
 
 const commentArray = async (idMeal) => {
   const counter = document.querySelector('.divCounter');
