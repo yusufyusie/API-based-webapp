@@ -276,7 +276,6 @@ p {
   width: 850px;
   height: 500px;
   background-color: #a3cfbb;
-  
 }
 
 .comments-board #imgThumb {
@@ -305,10 +304,10 @@ p {
 
 .comments-board input {
   margin: 1% 10%;
-  width: 25rem;;
+  width: 25rem;
   height: 30px;
   border-radius: 5px;
-  padding: .5rem;
+  padding: 0.5rem;
   border-color: #fed136;
   box-shadow: none;
 }
