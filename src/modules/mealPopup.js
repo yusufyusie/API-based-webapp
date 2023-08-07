@@ -28,9 +28,13 @@ const commentArray = async (idMeal) => {
   const div = document.createElement('div');
   div.className = 'counting';
   const data = await getComments(idMeal);
-  data.forEach((comment) => {
-    commentCard(comment.username, comment.creation_date, comment.comment);
-  });
+  if (Array.isArray(data)) {
+    data.forEach((comment) => {
+      commentCard(comment.username, comment.creation_date, comment.comment);
+    });
+  } else {
+    console.error('Data is not an array');
+  }
   counter.innerHTML = '';
   div.innerHTML = `<h4>Comments(${commentCounter()})</h4>`;
   counter.appendChild(div);
